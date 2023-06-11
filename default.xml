@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="github"
+           fetch=".."/>
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
@@ -1087,4 +1089,5 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  <include name="snippets/expidus.xml" />
 </manifest>
